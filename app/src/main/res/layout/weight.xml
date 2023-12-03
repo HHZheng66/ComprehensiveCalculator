@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp">
+
+<!--    返回按钮-->
+    <include layout="@layout/backbtn" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="重量单位转换"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="千克"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="0"
+            android:gravity="right"
+            android:textColor="#f5773b"
+            android:background="#ffffff"
+            android:id="@+id/kilogram"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="克"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:background="#ffffff"
+            android:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:id="@+id/gram"/>
+
+    </LinearLayout>
+
+<!--    数字键盘-->
+        <include layout="@layout/keyboard"/>
+
+</LinearLayout>

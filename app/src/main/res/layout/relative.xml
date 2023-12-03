@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp">
+
+    <!--    返回按钮-->
+    <include layout="@layout/backbtn" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="亲戚称呼计算"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="我"
+        android:gravity="right"
+        android:background="#ffffff"
+        android:id="@+id/relative_text"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="夫"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/husband_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="妻"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/wife_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="x"
+                    android:textSize="30dp"
+                    android:background="#ffffff"
+                    android:textColor="#f5773b"
+                    android:id="@+id/del_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="AC"
+                    android:textSize="30dp"
+                    android:background="#ffffff"
+                    android:textColor="#f5773b"
+                    android:id="@+id/ac_btn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="父"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/dad_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="母"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/mom_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="兄"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/elderBro_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="弟"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/youngerBro_btn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="姐"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/elderSis_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="妹"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/youngerSis_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="子"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/son_btn"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="女"
+                    android:textSize="35dp"
+                    android:background="#ffffff"
+                    android:id="@+id/daughter_btn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"/>
+
+                <android.widget.Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="="
+                    android:textSize="60dp"
+                    android:background="#ffffff"
+                    android:textColor="#f5773b"
+                    android:id="@+id/equal_btn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
